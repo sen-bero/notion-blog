@@ -60,24 +60,24 @@ const renderBlock = (block) => {
     case "paragraph":
       return (
         <p>
-          <Text text={value.text} />
+          <Text text={value.text}/>
         </p>
       );
     case "heading_1":
       return (
-        <h1>
+        <h1 className={styles.h}>
           <Text text={value.text} />
         </h1>
       );
     case "heading_2":
       return (
-        <h2>
+        <h2 className={styles.h}>
           <Text text={value.text} />
         </h2>
       );
     case "heading_3":
       return (
-        <h3>
+        <h3 className={styles.h}>
           <Text text={value.text} />
         </h3>
       );
@@ -124,7 +124,7 @@ const renderBlock = (block) => {
         </figure>
       );
     case "divider":
-      return <hr key={id} />;
+      return <hr key={id} className={styles.divider}/>;
     case "quote":
       return <blockquote key={id}>{value.text[0].plain_text}</blockquote>;
     case "code":
