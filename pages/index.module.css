@@ -1,13 +1,7 @@
 .container {
   padding: 0 20px;
-  max-width: 700px;
+  max-width: 850px;
   margin: 0 auto;
-}
-
-.logos {
-  display: flex;
-  align-items: center;
-  padding: 40px 0 20px;
 }
 
 .header {
@@ -20,8 +14,9 @@
 }
 
 .heading {
+  padding-left: 10px;
   padding-bottom: 5px;
-  border-bottom: 3px solid #000000;
+  border-bottom: 3px solid #ffffff;
   font-size: 16px;
   opacity: 0.8;
 }
@@ -39,24 +34,25 @@
 }
 
 .post {
-  border-bottom: 1px dashed #000000;
+  padding-left: 10px;
+  border-bottom: 1px dashed #ffffff;
 }
 
 .post h3 {
-  color: #000000;
+  color: #ffffff;
   margin-bottom: 10px;
-  font-size: 1.4rem;
+  font-size: 1.25rem;
 }
 
 .postDescription {
-  color: #000000;
+  color: #ffffff;
   margin-top: 0;
   margin-bottom: 12px;
-  opacity: 0.75;
 }
 
 .postDate{
   margin: 5px 0;
+  opacity: 0.75;
 }
 .postDate span{
   font-weight: bold;
@@ -64,10 +60,12 @@
 
 .postTagsTitle{
   font-weight: bold;
+  opacity: 0.75;
 }
 
 .tag{
-  padding: 2.5px 5px;
-  border-radius: 10%;
+  padding: 3px 5px;
+  border-radius: 45%;
+  border: 1px solid #ffffff ;
   background-color: #00ffe59e;
 }
