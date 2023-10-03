@@ -10,13 +10,15 @@
 }
 
 .container img {
-  width: 100%;
+  width: 75%;
   height: auto;
 }
 
 .container figure {
   margin-left: 0;
   margin-right: 0;
+  display: flex;
+  justify-content: center;
 }
 
 .container figcaption {
@@ -121,5 +123,13 @@
   }
   .pre {
     background-color: rgb(15, 8, 28);
+  }
+}
+
+
+@media (max-width: 600px) {
+  .container img {
+    width: 100%;
+    height: auto;
   }
 }
