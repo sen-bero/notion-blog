@@ -123,6 +123,12 @@ const renderBlock = (block) => {
           {caption && <figcaption>{caption}</figcaption>}
         </figure>
       );
+    case "callout":
+      return(
+        <p className={styles["img-description"]}>
+          <Text text={value.text}/>
+        </p>
+      );
     case "divider":
       return <hr key={id} className={styles.divider}/>;
     case "quote":
