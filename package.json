@@ -12,5 +12,8 @@
     "next": "^12.3.4",
     "react": "17.x",
     "react-dom": "17.x"
+  },
+  "engines":{
+    "node": "18.x"
   }
 }
