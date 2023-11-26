@@ -23,14 +23,13 @@ export default function Home({ posts }) {
         <h2 className={styles.heading}>全ての投稿</h2>
         <ol className={styles.posts}>
           {posts.map((post) => {
-            // Dateが存在する場合にのみ日付をフォーマットする
-            const date = post.properties.Date?.date?.start
-            ? new Date(post.properties.Date.date.start).toLocaleDateString("ja", {
+            const date = new Date(post.properties.Date.date.start).toLocaleDateString(
+              "ja", {
                 year: "numeric",
                 month: "2-digit",
                 day: "2-digit",
-              })
-            : "日付未定";
+              }
+            );
             if(post.properties.Status.select.name !== '公開' || !post.properties.Title.title[0]) {
               return <div />
             }
